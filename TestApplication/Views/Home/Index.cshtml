@@ -1,0 +1,26 @@
+﻿@model TestApplication.Models.INNDto
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+
+@using (Html.BeginForm("GetResult", "Home"))
+{
+    <p>Введите ИНН: </p>
+    <input type="number" name="inn" required/>
+    <input type="submit"/>
+}
+
+
+</body>
+</html>

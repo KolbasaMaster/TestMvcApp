@@ -1,0 +1,22 @@
+﻿@model Result
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetResult</title>
+</head>
+<body>
+<div>
+    <table>
+        <p>Количество : @Model.Deliverys</p>
+        <p>Сумма: @Model.RumSum</p>
+        <p>Сумма в валюте :@Model.Sum</p>
+    </table>
+</div>
+</body>
+</html>
